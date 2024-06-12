@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Enis:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Enis_jar</output-path>
+    <root id="archive" name="Enis.jar">
+      <element id="module-output" name="Enis" />
+    </root>
+  </artifact>
+</component>
