@@ -1,110 +1,51 @@
 import javax.swing.*;
 import java.awt.*;
 //GUI-Programmierung mit Swing
+
+
 public class Enis extends JFrame {
 
-
-    public Enis(){
-        super("Wer das liest hat einen Kleinen Pullerman"); //Tietel des Fensters
-
-    }//end of Constructor
-
-    public static void main(String[] args) {
-
-        int y = 30;
-        for (int i = 0; i < y; i++) {
-            JFrame f =new JFrame();
-            f.setSize(100,100);
-            f.setVisible(true);
-            f.setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
-            f.setLocation(200+(i*10),20);
-
-        }
-
-        int e = 30;
-        for (int i = 0; i < e; i++) {
-            JFrame f =new JFrame();
-            f.setSize(100,100);
-            f.setVisible(true);
-            f.setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
-            f.setLocation(200+(30*10),20+(i*10));
-
-        }
-
-        int l = 30;
-        for (int i = 0; i < l; i++) {
-            JFrame f =new JFrame();
-            f.setSize(100,100);
-            f.setVisible(true);
-            f.setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
-            f.setLocation(200+(30*10)-(i*10),20+(30*10));
-
-        }
+        public static void main(String[] args) {
+        Fenster fe = new Fenster();
+        int x = 1; //wie oft
+        for (int a = 0; a <x; a++) {
 
 
-        int ur = 31;
-        for (int i = 0; i < ur; i++) {
-            JFrame f = new JFrame();
-            f.setSize(100, 100);
-            f.setVisible(true);
-            f.setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
-            f.setLocation(200, 20 + (30 * 10) - (i * 10));
-        }
+            for (int i = 0; i < 5; i++) {
+                //Links
+                fe.fenster(200 + (i * 60), 20);
+                fe.fenster(200 + (5 * 60), 20 + (i * 60));
+                fe.fenster(200 + (5 * 60) - (i * 60), 20 + (5 * 60));
+                fe.fenster(200, 20 + (5 * 60) - (i * 60));
 
-            //Rechtes Ei
+                fe.fenster(300 + (i * 20), 40);
+                fe.fenster(300 + (5 * 60), 40 + (i * 60));
+                fe.fenster(300 + (5 * 60) - (i * 60), 40 + (5 * 60));
+                fe.fenster(300, 40 + (5 * 60) - (i * 60));
 
-            int yr = 30;
-            for (int i = 0; i < yr; i++) {
-                JFrame f =new JFrame();
-                f.setSize(100,100);
-                f.setVisible(true);
-                f.setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
-                f.setLocation(200+(i*10),20+(400));
+                fe.fenster(400, 40 + (i*50));
+                //Rechts
+                fe.fenster(200 + (i * 60), 450);
+                fe.fenster(200 + (5 * 60), 450 + (i * 60));
+                fe.fenster(200 + (5 * 60) - (i * 60), 450 + (5 * 60));
+                fe.fenster(200, 450 + (5 * 60) - (i * 60));
 
-            }
+                fe.fenster(300 + (i * 20), 450);
+                fe.fenster(300 + (5 * 60), 450 + (i * 60));
+                fe.fenster(300 + (5 * 60) - (i * 60), 450 + (5 * 60));
+                fe.fenster(300, 450 + (5 * 60) - (i * 60));
 
-            int er = 30;
-            for (int i = 0; i < er; i++) {
-                JFrame f =new JFrame();
-                f.setSize(100,100);
-                f.setVisible(true);
-                f.setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
-                f.setLocation(200+(30*10),20+(i*10)+(400));
-
-            }
-
-            int lr = 30;
-            for (int i = 0; i < lr; i++) {
-                JFrame f =new JFrame();
-                f.setSize(100,100);
-                f.setVisible(true);
-                f.setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
-                f.setLocation(200+(30*10)-(i*10),20+(30*10)+(400));
-
+                fe.fenster(400, 470 + (i*50));
+                //vorne
+                JFrame p = new JFrame();
+                p.setSize(500, 200);
+                p.setVisible(true);
+                p.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
+                p.getContentPane().setBackground(new Color((int)(Math.random()*100),(int)(Math.random()*100),(int)(Math.random()*100)));
+                p.setLocation(300 + (i * 180), 350);
             }
 
 
-            int or = 31;
-            for (int i = 0; i < or; i++) {
-                JFrame f = new JFrame();
-                f.setSize(100, 100);
-                f.setVisible(true);
-                f.setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
-                f.setLocation(200, 20 + (30 * 10) - (i * 10)+(400));
-            }
-
-
-        int x = 100;
-        for (int i = 0; i < x; i++) {
-            JFrame f =new JFrame();
-            f.setSize(200,200);
-            f.setVisible(true);
-            f.setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
-            f.setLocation(300+(i*10),320);
-
         }
-
-
     }
-
 }//end of all
