@@ -14,7 +14,8 @@ public class Fenster {
             lable =new JLabel("Guten tag das ist ein Muster das nichts darstellt");
             f.add(pan);
             pan.add(lable);
-            pan.setBackground(new Color((int)(Math.random()*100),(int)(Math.random()*100),(int)(Math.random()*100)));
+            //pan.setBackground(new Color((int)(Math.random()*100),(int)(Math.random()*100),(int)(Math.random()*100)));
+            pan.setBackground((Color.pink));
             f.setLocation(x,y);
 
     }//fenster

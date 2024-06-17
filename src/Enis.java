@@ -41,7 +41,8 @@ public class Enis extends JFrame {
                 p.setSize(500, 200);
                 p.setVisible(true);
                 p.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
-                p.getContentPane().setBackground(new Color((int)(Math.random()*100),(int)(Math.random()*100),(int)(Math.random()*100)));
+                //p.getContentPane().setBackground(new Color((int)(Math.random()*100),(int)(Math.random()*100),(int)(Math.random()*100)));
+                p.getContentPane().setBackground(Color.pink);
                 p.setLocation(300 + (i * 180), 350);
             }
 
